@@ -1,0 +1,66 @@
+.header-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 59%,
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url("https://cdn.glitch.global/1658bcb8-d5e2-40e3-9809-53704cd6100e/logos?v=1660479691115");
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.top.index {
+  margin: 0px 0px 0px 0px;
+  padding: 28px 0px 24px 0px;
+}
+
+body {
+  background-color: white;
+  overflow: hidden;
+}
+
+h1.index {
+  position: relative;
+}
+
+.meeting-div {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 65px;
+  width: 100%;
+}
+
+.multi-wave {
+  margin-bottom: 50px;
+}
+
+#current-project {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.index-announcements {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  height: auto;
+  width: max-content;
+  padding: 20px 40px 20px 40px;
+  
+  border-radius: 16px;
+  background: linear-gradient(var(--orange), var(--red));
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.index-announcements:hover {
+  transform: scale(1.05) translate(-47.5%,-47.5%);
+}

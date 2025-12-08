@@ -1,0 +1,227 @@
+body {
+  background-color: white;
+  color: var(--darkestteal);
+  overflow-x: hidden;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+  margin: 0;
+}
+
+.h-div {
+  display: flex;
+  justify-content: center;
+}
+
+.ellipse {
+  border-radius: 25px;
+  padding: 0px 15px 0px 15px;
+  width: max-content;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  padding: 0 10vw 0 10vw;
+}
+
+section.info {
+  margin-bottom: 150px;
+}
+
+section p,
+.Infographic-inner {
+  padding: 0 10vw 0 10vw;
+}
+
+.Infographic-inner {
+  font-family: "Monaco", sans-serif;
+}
+
+.Infographic-inner svg {
+  margin-top: -35px;
+}
+
+.Infographic-yAxis {
+  font-size: 14px;
+  text-align: center;
+}
+
+section h1 {
+  padding-bottom: 10px;
+}
+
+section.image {
+  background-image: url("https://cdn.glitch.global/e05e4221-4836-4266-8741-2a20e992b859/Mission_Bkgr.jpg?v=1661800399521");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -120px;
+}
+
+section.image h1 {
+  color: var(--darkestteal);
+  font-weight: bold;
+  padding-bottom: 10vh;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid.double-left {
+  grid-template-columns: 3fr 1fr;
+}
+
+.blob {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  width: 550px;
+  margin-right: -10vw;
+  height: 100%;
+}
+
+.blob svg {
+  height: 500px;
+  width: 500px;
+}
+
+.blob-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Monaco", sans-serif;
+  color: white;
+}
+
+.blob-text p {
+  padding: 0 0 20px 0;
+}
+
+.values h3 {
+  text-align: left;
+  color: var(--darkteal);
+  padding: 10px 10vw 5px;
+}
+
+.values p {
+  padding-right: 0;
+}
+
+.values img {
+  height: 150px;
+  padding: 20px 10vw 10px;
+  filter: brightness(80%);
+}
+
+.grid.triple {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid.triple .square-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  height: minmax(100px, max-content);
+  padding: 20px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.grid.triple p {
+  margin: 0;
+  font-size: 15px;
+  padding: 3px 0 0 0;
+}
+
+.grid.triple .img-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  min-height: 145px;
+}
+
+.grid.triple img {
+  position: absolute;
+  z-index: 1000;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.grid.triple img.white {
+  position: absolute;
+  z-index: 999;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: scale(1.1);
+  transform-origin: center;
+  filter: brightness(0) invert(1);
+}
+
+.grid.triple .blur-circle {
+  position: absolute;
+  z-index: 999;
+  width: 135px;
+  height: 135px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--darkred);
+  filter: blur(5px);
+}
+
+.grid.triple img.b-border {
+  position: absolute;
+  z-index: 998;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: scale(1.17);
+  transform-origin: center;
+  filter: brightness(0);
+}

@@ -1,0 +1,31 @@
+.blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  width: 550px;
+  height: 100%;
+  width: 100%;
+  margin-right: 0;
+}
+
+.blob svg {
+  height: 700px;
+  width: 700px;
+  margin-top: -200px;
+  margin-bottom: -200px;
+}
+
+.blob-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.blob-text h1 {
+  padding-top: 10px;
+}

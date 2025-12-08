@@ -1,0 +1,759 @@
+:root {
+  --lightblue: #E6F8FF;
+  --blue: #0068E1;
+  --lightpurple: #E4D6FF;
+  --purple: #AE84FF;
+  --darkblue: #0D38D2;
+  --orange: #F8B88D;
+  --lighterred: #f5d5d3;
+  --lightred: #F27B6F;
+  --red: #EA374F;
+  --darkred: #A41746;
+  --darkerred: #781133;
+  --lighteryellow: #FFF9E1;
+  --lightyellow: #FAE687;
+  --yellow: #fdd846;
+  --lightteal: #D8F9F4;
+  --teal: #44D5B9;
+  --darkteal: #119B90;
+  --darkerteal: #0A6B68;
+  --darkestteal: #003046;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  margin-top: 70px;
+  color: var(--darkestteal);
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+.footer {
+  display: grid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 50px;
+  background-color: var(--darkteal);
+  z-index: 10001;
+}
+
+.footer .h1-spacer {
+  display: flex;
+  align-items: center;
+}
+
+.footer h1 {
+  height: max-content;
+  margin: 0 auto 0 auto;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 5px 20px 5px 20px;
+}
+
+.behind {
+  padding: 20px 0 20px 0;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.ellipse.half {
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 0;
+  color: white;
+  padding-top: 10px;
+}
+
+.code {
+  font-family: "Monaco", sans-serif;
+  background: lightgray;
+  font-size: 14px;
+  padding: 0 3px 0 3px;
+}
+
+.no-bold {
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bar {
+  list-style-type: none;
+  position: fixed;
+  z-index: 99999;
+
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding-right: 50px;
+}
+
+.bar.scrolled {
+  background-color: #0ea194 !important;
+  transition: background-color 200ms linear;
+}
+
+.logo {
+  display: block;
+  height: 60%;
+  width: 150px;
+  background-image: url("https://cdn.glitch.global/1658bcb8-d5e2-40e3-9809-53704cd6100e/GWC_Logo_Teal.png?v=1660439398664");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo.scrolled {
+  background-image: url("https://cdn.glitch.global/1658bcb8-d5e2-40e3-9809-53704cd6100e/GWC_Logo_White.png?v=1660439400394") !important;
+  transition: background-image 200ms linear;
+}
+
+.logo-link {
+  height: 100%;
+}
+
+.bar li {
+  font-size: 16px;
+  height: 100%;
+  width: max-content;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar li:first-child {
+  float: left;
+}
+
+.bar li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tab a {
+  transition: all ease-in-out 200ms;
+  position: relative;
+}
+
+.tab a.unselected::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.2em;
+  width: 0%;
+  background-color: var(--teal);
+  border-radius: 25px;
+  bottom: -0.5em;
+  transition: all ease-in-out 200ms;
+}
+
+.tab a:hover::after {
+  width: 100%;
+}
+
+.selected {
+  background-color: #44d5b9;
+  height: 50%;
+  padding: 0px 15px 0px 15px;
+  border-radius: 25px;
+}
+
+.selected.scrolled {
+  background-color: #0a6b68 !important;
+  transition: background-color 200ms linear;
+}
+
+.selected a {
+  color: white;
+}
+
+.tab.scrolled {
+  color: white !important;
+  transition: color 200ms linear;
+}
+
+/* ========================     End of navigation bar    ========================= **/
+
+.obscure {
+  filter: blur(1px) brightness(50%);
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.clear {
+  filter: blur(0px) brightness(100%);
+  box-shadow: 0px 0px 25px rgb(218, 218, 218);
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.carousel-inner.top {
+  border-radius: 25px;
+  height: 100%;
+}
+
+.carousel-item.top {
+  cursor: pointer;
+}
+
+#top-carousel {
+  margin: 20px 30px 20px 30px;
+  box-shadow: 0px 0px 25px #0a6b68;
+  border-radius: 25px;
+  height: 100%;
+
+  transition: transform 0.2s;
+}
+
+#top-carousel:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 25px #074b48;
+}
+
+.carousel-indicators.top {
+  width: max-content;
+  margin: auto;
+}
+
+.top-project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+
+.project-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 10px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.v-line {
+  grid-row: span 3;
+  background-color: white;
+}
+
+.Q {
+  font-size: 12px;
+  font-style: bold;
+  text-align: right;
+}
+
+.A {
+  font-size: 12px;
+  font-style: normal;
+  text-align: left;
+}
+
+/*          Other carousels on home page          **/
+
+section {
+  margin: 0;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 10vh 20vw 10vh 20vw;
+  width: 100%;
+}
+
+section.taller {
+  min-height: 550px;
+}
+
+.lighterred {
+  background-color: var(--lighterred);
+  color: var(--darkred);
+}
+
+.lightred {
+  background-color: var(--lightred);
+  color: var(--darkestteal);
+}
+
+.red {
+  background-color: var(--red);
+  color: white;
+}
+
+.darkred {
+  background-color: var(--darkred);
+  color: var(--lighterred);
+}
+
+.orange {
+  background-color: var(--orange);
+  color: var(--darkred);
+}
+
+.lightyellow {
+  background-color: var(--lightyellow);
+  color: white;
+  text-shadow: var(--darkred) 1px 0 5px;
+}
+
+.lighteryellow {
+  background-color: var(--lighteryellow);
+  color: var(--darkestteal);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.lightteal {
+  background-color: var(--lightteal);
+}
+
+.teal {
+  background-color: var(--teal);
+}
+
+.darkteal {
+  background-color: var(--darkteal);
+}
+
+.darkerteal {
+  background-color: var(--darkerteal);
+}
+
+.dark {
+  background-color: #0f0f10;
+}
+
+.lightblue {
+  background-color: var(--lightblue);
+}
+
+.blue {
+  background-color: var(--blue);
+  color: white;
+}
+
+.darkblue {
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.shape-fill {
+    fill: white;
+}
+
+.shape-fill.lighterred {
+    fill: var(--lighterred);
+}
+
+.shape-fill.lightred {
+    fill: var(--lightred);
+}
+
+.shape-fill.red {
+    fill: var(--red);
+}
+
+.shape-fill.darkred {
+    fill: var(--darkred);
+}
+
+.shape-fill.orange {
+    fill: var(--orange);
+}
+
+.shape-fill.lightyellow {
+  fill: var(--lightyellow)
+}
+
+.shape-fill.yellow {
+    fill: var(--yellow);
+}
+
+.shape-fill.lightteal {
+    fill: var(--lightteal);
+}
+
+.shape-fill.teal {
+    fill: var(--teal);
+}
+
+.shape-fill.darkteal {
+    fill: var(--darkteal);
+}
+
+.shape-fill.darkerteal {
+    fill: var(--darkerteal);
+}
+
+.shape-fill.lightblue {
+  fill: var(--lightblue);
+}
+
+.shape-fill.blue {
+  fill: var(--blue);
+}
+
+.shape-fill.purple {
+  fill: var(--purple);
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bubble svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg), translateY(-2px);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 171px;
+}
+
+.wave svg.small {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.multi-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.multi-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+section.top {
+  background-color: #0ea194;
+  padding: 20px 10px 0px 10px;
+  margin: 0px 0px 0px 0px;
+  min-height: 500px;
+  max-height: max-content;
+}
+
+section.thin {
+  padding: 0px 20px 10px 20px;
+  min-height: max-content;
+}
+
+.section-top-space.tutorials {
+  height: 15px;
+  width: 100%;
+  margin-top: -20px;
+}
+
+section.tutorials {
+  margin: 0px 0px 60px 0px;
+  padding: 0px;
+  min-height: max-content;
+}
+
+.ellipse {
+  width: max-content;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+}
+
+.carousel.slide.gen {
+  margin: 0px;
+}
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+.slide-set {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  column-gap: 40px;
+  justify-content: center;
+  margin: 0px 15px 0px 15px;
+}
+
+.carousel-control-prev.gen,
+.carousel-control-next.gen {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-next.gen {
+  float: right;
+}
+
+.project.gen,
+#project-page-image-container {
+  display: flex;
+  position: relative;
+  border-radius: 25px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 10px lightgray;
+  cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  transition: transform 0.2s;
+}
+
+.project.gen {
+  height: 191px;
+  margin: 10px 0px 10px 0px;
+  box-shadow: 0px 0px 10px var(--darkblue);
+}
+
+.project.gen:hover,
+#project-page-image-container:hover {
+  transform: scale(1.05);
+  box-shadow: none;
+}
+
+.background.gen,
+#project-page-image {
+  object-fit: cover;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: filter 0.2s;
+}
+
+.background.gen {
+  height: 191px;
+  width: 300px;
+  z-index: 1;
+}
+
+.project-info-grid.gen {
+  display: none;
+  z-index: 2;
+}
+
+.Q.gen,
+.A.gen {
+  color: white;
+  transition: none;
+  filter: none;
+}
+
+.header.gen {
+  grid-column: span 3;
+  color: white;
+  text-align: center;
+}
+
+/*                  Project page below                  **/
+
+.whole-project-page-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 20px 50px 0px 50px;
+  grid-template-rows: minmax(260px, auto) max-content;
+  width: 100vw;
+}
+
+.project-page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(40px, max-content);
+}
+
+.back-to-home {
+  font-size: 30px;
+  position: absolute;
+  margin: 10px 0px 0px 50px;
+  cursor: pointer;
+}
+
+#project-page-image-container {
+  position: relative;
+  width: 100%;
+  height: 290px;
+}
+
+#project-page-image {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#project-page-title {
+  margin-top: 0px;
+}
+
+#go-to {
+  color: white;
+  display: none;
+}
+
+.lesson-frame {
+  box-shadow: 0px 0px 25px rgb(218, 218, 218);
+}
+
+/*#project-page-image:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}**/
+
+.header.project-page {
+  text-decoration: underline;
+  width: max-content;
+  margin: 0px 0px 20px 0px;
+}
+
+.link {
+  margin: 0px 0px 20px 20px;
+  float: left;
+  font-weight: bold;
+  text-decoration: none;
+  color: gray;
+  border: 2px solid lightgray;
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
+
+  transition: box-shadow 0.2s, border 0.2s, color 0.2s;
+}
+
+.link:hover {
+  box-shadow: 0px 0px 25px lightgray;
+  text-decoration: none;
+  border: 2px solid rgb(14, 167, 228);
+  color: rgb(14, 167, 228);
+}
+
+a:link {
+  text-decoration: none;
+  color: gray;
+}
+
+a:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(14, 167, 228);
+}
+
+a:active {
+  text-decoration: none;
+  color: gray;
+}
+
+.detail-left {
+  float: left;
+  padding-right: 10px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.glyphicon.project-page {
+  color: white;
+}
+
+.fade-black {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade-black;
+  animation-duration: 0.5s;
+  animation-name: fade-black;
+}
+
+.fade-gray {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade-gray;
+  animation-duration: 0.5s;
+  animation-name: fade-gray;
+}
+
+@keyframes fade-black {
+  from {
+    color: white;
+  }
+
+  to {
+    color: black;
+  }
+}
+
+@keyframes fade-gray {
+  from {
+    color: black;
+  }
+
+  to {
+    color: white;
+  }
+}

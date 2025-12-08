@@ -1,0 +1,2 @@
+const indexHeader = document.getElementsByClassName('header index')
+document.head.append(`<link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/e05e4221-4836-4266-8741-2a20e992b859/favicon.png?v=1668190837824">`)

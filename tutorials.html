@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GWC Tutorials</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <ul class="bar scrolled">
+        <li><a class="logo-link" href="index.html">
+                <div class="logo scrolled"></div>
+            </a></li>
+        <li class="tab"><a href="tutorials.html" class="selected scrolled" style="color: white">Tutorials</a></li>
+        <li class="tab"><a href="faqs.html" class="unselected">FAQs</a></li>
+        <li class="tab"><a href="about.html" class="unselected" style="color: white">About</a></li>
+    </ul>
+
+    <!-- Featured Projects -->
+    <section class="top">
+        <h2 class="ellipse yellow">Featured Tutorials</h2>
+
+        <div id="top-carousel" class="carousel slide" data-bs-ride="carousel" onmouseover="topZoom()"
+            onmouseout="topUnzoom()">
+            <div class="carousel-indicators top">
+
+            </div>
+            <div class="carousel-inner top">
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#top-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#top-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none" class="small">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    </section>
+
+    <div class="section-top-space tutorials"></div>
+</body>
+
+</html>

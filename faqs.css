@@ -1,0 +1,41 @@
+.blob {
+  margin-right: 0;
+}
+
+.blob svg {
+  height: 700px;
+  width: 700px;
+  margin-top: -200px;
+  margin-bottom: -200px;
+}
+
+.blob-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.blob-text h1 {
+  font-size: 60px;
+  padding-top: 10px;
+}
+
+.header {
+  font-size: 36px;
+  padding: 5px 20px 5px 20px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 60px;
+  padding-top: 50px;
+}
+
+.faq-grid p {
+  text-align: center;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
