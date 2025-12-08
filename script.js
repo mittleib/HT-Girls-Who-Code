@@ -1,7 +1,7 @@
 // ADJUSTABLE VARIABLES (CHANGE BUT DO NOT DELETE)
 var genProjWidth = 300;
 var genProjSpace = 40;
-var domain = 'htgirlswhocode';
+var domain = 'HT-Girls-Who-Code';
 var president = 'Brynne Mittleider';
 var sponsor = 'Mrs. Meier'
 
@@ -21,15 +21,15 @@ footer.innerHTML = `<div class="h1-spacer">
 document.body.appendChild(footer);
 
 
-let isTutorials = location.href == `https://${domain}.glitch.me/tutorials.html`;
+let isTutorials = location.href == `https://mittleib.github.io/${domain}/tutorials.html`;
 if (!isTutorials) {
-  isTutorials = location.href == `http://${domain}.glitch.me/tutorials.html`;
+  isTutorials = location.href == `https://mittleib.github.io/${domain}/tutorials.html`;
   if (!isTutorials) {
     isTutorials =
-      location.href == `https://${domain}.glitch.me/exampleTutorial.html`;
+      location.href == `https://mittleib.github.io/${domain}/exampleTutorial.html`;
     if (!isTutorials) {
       isTutorials =
-        location.href == `http://${domain}.glitch.me/exampleTutorial.html`;
+        location.href == `http://mittleib.github.io/${domain}/exampleTutorial.html`;
     }
   }
 }
