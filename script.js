@@ -5,20 +5,6 @@ var domain = 'HT-Girls-Who-Code';
 var president = 'Brynne Mittleider';
 var sponsor = 'Mrs. Meier'
 
-// Add footer to current page
-const footer = document.createElement("div");
-footer.className = 'footer';
-footer.innerHTML = `<div class="h1-spacer">
-                      <h1 class="header ellipse yellow index">
-                        President: ${president}
-                      </h1>
-                    </div>
-                    <div class="h1-spacer">
-                      <h1 class="header ellipse yellow index">
-                        Sponsor: ${sponsor}
-                      </h1>
-                    </div>`
-document.body.appendChild(footer);
 
 
 let isTutorials = location.href == `https://mittleib.github.io/${domain}/tutorials.html`;
@@ -264,10 +250,10 @@ function goToProject(givenProject) {
 }
 
 if (
-  location.href == `https://${domain}.glitch.me/index.html` ||
-  location.href == `http://${domain}.glitch.me/index.html` ||
+  location.href == `https://mittleib.github.io/${domain}/index.html` ||
+  location.href == `http://mittleib.github.io/${domain}/index.html` ||
   location.href == `https://${domain}.glitch.me/` ||
-  location.href == `http://${domain}.glitch.me/`
+  location.href == `http://mittleib.github.io/${domain}/`
 ) {
   const currentProject = document.getElementById("current-project");
   const index = currentProject.innerText;
@@ -275,8 +261,8 @@ if (
 }
 
 if (
-  location.href == `https://${domain}.glitch.me/tutorials.html` ||
-  location.href == `http://${domain}.glitch.me/tutorials.html`
+  location.href == `https://mittleib.github.io/${domain}/tutorials.html` ||
+  location.href == `http://mittleib.github.io/${domain}/tutorials.html`
 ) {
   function topZoom() {
     for (const box of document.getElementsByClassName("box")) {
