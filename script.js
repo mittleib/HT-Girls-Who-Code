@@ -296,13 +296,10 @@ if (
     categories = [];
 
     document.body.innerHTML = `<ul class="bar scrolled">
-                                    <li><a class="logo-link" href="index.html">
+                                    <li><a class="logo-link">
                                             <div class="logo scrolled"></div>
                                         </a></li>
-                                    <li class="tab"><a href="projects.html" class="unselected" style="color: white">Project Gallery</a></li>
-                                    <li class="tab"><a href="calendar.html" class="unselected" style="color: white">Calendar</a></li>
                                     <li class="tab"><a href="tutorials.html" class="selected scrolled" style="color: white">Tutorials</a></li>
-                                    <li class="tab"><a href="faqs.html" class="unselected">FAQs</a></li>
                                     <li class="tab"><a href="about.html" class="unselected" style="color: white">About</a></li>
                                 </ul>
 
