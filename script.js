@@ -252,7 +252,7 @@ function goToProject(givenProject) {
 if (
   location.href == `https://mittleib.github.io/${domain}/index.html` ||
   location.href == `http://mittleib.github.io/${domain}/index.html` ||
-  location.href == `https://${domain}.glitch.me/` ||
+  location.href == `https://mittleib.github.io/${domain}/` ||
   location.href == `http://mittleib.github.io/${domain}/`
 ) {
   const currentProject = document.getElementById("current-project");
