@@ -335,20 +335,7 @@ if (
                                 </div>
                                 </section>
 
-                                <div class="section-top-space tutorials"></div>
-                                
-                                <div class="footer">
-                                  <div class="h1-spacer">
-                                    <h1 class="header ellipse yellow index">
-                                      President: ${president}
-                                    </h1>
-                                  </div>
-                                  <div class="h1-spacer">
-                                    <h1 class="header ellipse yellow index">
-                                      Sponsor: ${sponsor}
-                                    </h1>
-                                  </div>
-                                </div>`;
+                                <div class="section-top-space tutorials"></div>`;
     
     isScrolled();
 
